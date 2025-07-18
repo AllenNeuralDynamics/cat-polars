@@ -1,6 +1,7 @@
 {
 	"version": 1,
 	"base_image": "codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04",
+	"post_install": true,
 	"options": {
 		"registry_host_arg": true,
 		"git_ask_pass": true
@@ -13,7 +14,8 @@
 					"version": "12.9ubuntu3"
 				},
 				{
-					"name": "graphviz"
+					"name": "graphviz",
+					"version": "2.42.2-6ubuntu0.1"
 				}
 			],
 			"install_software_properties_common": true
@@ -21,13 +23,16 @@
 		"pip3": {
 			"packages": [
 				{
-					"name": "ipykernel"
+					"name": "ipykernel",
+					"version": "6.29.5"
 				},
 				{
-					"name": "lazynwb"
+					"name": "lazynwb",
+					"version": "0.2.60"
 				},
 				{
-					"name": "polars[plot,pandas,graph]"
+					"name": "polars[plot,pandas,graph]",
+					"version": "1.31.0"
 				}
 			],
 			"options": {},
