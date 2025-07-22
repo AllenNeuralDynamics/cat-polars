@@ -1,4 +1,4 @@
-# hash:sha256:c15040fc1cfc89c7ccdf50bc880eb0accf47345b46a6b638fec7c23e7a7a6e4b
+# hash:sha256:611e22fd9e58e008b75e381c18557fc483354b1aeee4d813648960bf78dda943
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
 
@@ -16,7 +16,7 @@ RUN apt-get update \
 
 RUN pip3 install -U --no-cache-dir \
     ipykernel==6.29.5 \
-    lazynwb==0.2.60 \
+    lazynwb==0.2.62 \
     polars[plot,pandas,graph]==1.31.0
 
 COPY postInstall /
